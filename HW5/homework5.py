@@ -15,8 +15,8 @@ def read_corpus_sentiment(filename):
         return corpus, y
 
 #start read def
-corpus_train, y_train = read_corpus_sentiment('yelp_labelled_train.txt')
-corpus_test, y_test = read_corpus_sentiment('yelp_labelled_test.txt')
+corpus_train, y_train = read_corpus_sentiment('HW5/yelp_labelled_train.txt')
+corpus_test, y_test = read_corpus_sentiment('HW5/yelp_labelled_test.txt')
 
 #lowercase & pre-processing
 vectorizer = TfidfVectorizer(lowercase=True, stop_words='english')
